@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cristian_Navarro_Examen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="lblUser" Text="Usuario coneccted =" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="15"/>
+
+            
+            
+            <Label Text="Estudiante" HorizontalTextAlignment="Start" TextColor="Black" FontSize="15" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" x:Name="lblNombre" HorizontalTextAlignment="End" TextColor="Black" FontSize="25" />
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblApellido" HorizontalTextAlignment="Start" TextColor="Black" FontSize="25"/>
+
+            </Grid>
+            <Label Text="Resumen de pagos" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Monto Inicial" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+                <Label Grid.Row="1" Grid.Column="0" Text="Cuota 1 de 3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+                <Label Grid.Row="2" Grid.Column="0" Text="Cuota 2 de 3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+                <Label Grid.Row="3" Grid.Column="0" Text="Cuota 3 de 3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblDato1" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20"  />
+                <Label Grid.Row="1" Grid.Column="1" x:Name="lblDato2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+                <Label Grid.Row="2" Grid.Column="1" x:Name="lblDato3" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+                <Label Grid.Row="3" Grid.Column="1" x:Name="lblDato4" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="20" />
+
+            </Grid>
+
+            <Label x:Name="lblTotal" Text="Total = " HorizontalTextAlignment="Center" FontSize="40" TextColor="DarkRed" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

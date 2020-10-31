@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cristian_Navarro_Examen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="1" Source="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" HorizontalOptions="Start" WidthRequest="40" HeightRequest="40"/>
+                <Entry Grid.Row="1" x:Name="txtUser" Placeholder="Usuario" HorizontalTextAlignment="Center" />
+                <Image Grid.Row="2" Source="https://cdn2.iconfinder.com/data/icons/keys-line-style/120/key-15-256.png" HorizontalOptions="Start" WidthRequest="40" HeightRequest="40"/>
+                <Entry Grid.Row="2" x:Name="txtPass" Placeholder="Contraseña" IsPassword="True" HorizontalTextAlignment="Center"/>
+            </Grid>
+
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
